@@ -8,7 +8,7 @@ CREATE TABLE Students (
     Email VARCHAR(25) NOT NULL,
     Phone VARCHAR(11) NOT NULL,
     Subject VARCHAR(25) NOT NULL,
-    SessonYear INT NOT NULL,
+    SessionYear INT NOT NULL,
     PRIMARY KEY (StudentID)
 )
 GO
