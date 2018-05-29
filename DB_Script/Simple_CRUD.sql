@@ -5,10 +5,10 @@ GO
 CREATE TABLE Students (
     StudentID INT IDENTITY,
     Name VARCHAR(25) NOT NULL,
-    Email VARCHAR(25) NOT NULL,
-    Phone VARCHAR(11) NOT NULL,
-    Subject VARCHAR(25) NOT NULL,
-    SessionYear INT NOT NULL,
+    Email VARCHAR(25) NULL,
+    Phone VARCHAR(11) NULL,
+    Subject VARCHAR(25) NULL,
+    SessionYear INT NULL,
     PRIMARY KEY (StudentID)
 )
 GO

@@ -1,0 +1,70 @@
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\csc.exe
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\System.Collections.Immutable.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\System.Reflection.Metadata.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\vbc.exe
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\VBCSCompiler.exe
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\roslyn\VBCSCompiler.exe.config
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\CRUD-ADO.dll.config
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\CRUD-ADO.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\CRUD-ADO.pdb
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Antlr3.Runtime.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\AspNet.ScriptManager.bootstrap.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\AspNet.ScriptManager.jQuery.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Microsoft.ScriptManager.WebForms.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Microsoft.Web.Infrastructure.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Newtonsoft.Json.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\System.Web.Optimization.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\WebGrease.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\System.Web.Optimization.xml
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Antlr3.Runtime.pdb
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Newtonsoft.Json.xml
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\obj\Debug\CRUD-ADO.csprojResolveAssemblyReference.cache
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\obj\Debug\CRUD-ADO.dll
+D:\IDB-BISEW\ASP.NET\Practice Files\CRUD-ADO\CRUD-ADO\obj\Debug\CRUD-ADO.pdb
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\csc.exe
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\System.Collections.Immutable.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\System.Reflection.Metadata.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\vbc.exe
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\VBCSCompiler.exe
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\roslyn\VBCSCompiler.exe.config
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\CRUD-ADO.dll.config
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\CRUD-ADO.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\CRUD-ADO.pdb
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Antlr3.Runtime.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\AspNet.ScriptManager.bootstrap.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\AspNet.ScriptManager.jQuery.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Microsoft.ScriptManager.WebForms.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Microsoft.Web.Infrastructure.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Newtonsoft.Json.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\System.Web.Optimization.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\WebGrease.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\System.Web.Optimization.xml
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Antlr3.Runtime.pdb
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Newtonsoft.Json.xml
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\obj\Debug\CRUD-ADO.csprojResolveAssemblyReference.cache
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\obj\Debug\CRUD-ADO.dll
+D:\Github\CRUD-With-ADO.NET\CRUD-ADO\obj\Debug\CRUD-ADO.pdb
