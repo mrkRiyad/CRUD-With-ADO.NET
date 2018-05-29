@@ -6,10 +6,9 @@ using System.Data;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.ComponentModel;
-using CRUDwithADO.NET;
 
 [DataObject(true)]
-public class StudentDB
+public static class StudentDB
 {
     // For Reading All Students
     [DataObjectMethod(DataObjectMethodType.Select)]
@@ -63,13 +62,19 @@ public class StudentDB
     [DataObjectMethod(DataObjectMethodType.Delete)]
     public static int DeleteStudent(Students std)
     {
-        string sql = "Delete Students Where StudentID = @StudentID)";
-        int deleteCount;
+        //string sql = "Delete From Students Where StudentID = @StudentID And Name = @Name And Email = @Email And Phone = @Phone And Subject = @Subject And SessionYear = @SessionYear)";
+        string sql = "Delete From Students Where StudentID = @StudentID";
+        int deleteCount = 0;
         using (SqlConnection con = new SqlConnection(GetConnectionString()))
         {
             using (SqlCommand cmd = new SqlCommand(sql, con))
             {
                 cmd.Parameters.AddWithValue("StudentID", std.StudentID);
+                //cmd.Parameters.AddWithValue("Name", std.Name);
+                //cmd.Parameters.AddWithValue("Email", std.Email);
+                //cmd.Parameters.AddWithValue("Phone", std.Phone);
+                //cmd.Parameters.AddWithValue("Subject", std.Subject);
+                //cmd.Parameters.AddWithValue("SessionYear", std.SessionYear);
                 con.Open();
                 deleteCount = cmd.ExecuteNonQuery();
             }
@@ -78,20 +83,26 @@ public class StudentDB
     }
     // For Updating Student
     [DataObjectMethod(DataObjectMethodType.Update)]
-    public static int UpdateStudent(Students originalStd, Students std)
+    public static int UpdateStudent(Students original_Student, Students student)
     {
-        string sql = "Update Students Set Name = @Name, Email = @Email, Phone = @Phone, Subject = @Subject, SessionYear = @SessionYear Where StudentID = @Original_StudentID)";
-        int updateCount;
+        //string sql = "Update Students Set Name = @Name, Email = @Email, Phone = @Phone, Subject = @Subject, SessionYear = @SessionYear Where StudentID = @Original_StudentID And Name = @Original_Name And Email = @Original_Email And Phone = @Original_Phone And Subject = @Original_Subject And SessionYear = @Original_SessionYear)";
+        string sql = "Update Students Set Name = @Name, Email = @Email, Phone = @Phone, Subject = @Subject, SessionYear = @SessionYear Where StudentID = @original_StudentID";
+        int updateCount = 0;
         using (SqlConnection con = new SqlConnection(GetConnectionString()))
         {
             using (SqlCommand cmd = new SqlCommand(sql, con))
             {
-                cmd.Parameters.AddWithValue("Name", std.Name);
-                cmd.Parameters.AddWithValue("Email", std.Email);
-                cmd.Parameters.AddWithValue("Phone", std.Phone);
-                cmd.Parameters.AddWithValue("Subject", std.Subject);
-                cmd.Parameters.AddWithValue("SessionYear", std.SessionYear);
-                cmd.Parameters.AddWithValue("Original_StudentID", originalStd.StudentID);
+                cmd.Parameters.AddWithValue("Name", student.Name);
+                cmd.Parameters.AddWithValue("Email", student.Email);
+                cmd.Parameters.AddWithValue("Phone", student.Phone);
+                cmd.Parameters.AddWithValue("Subject", student.Subject);
+                cmd.Parameters.AddWithValue("SessionYear", student.SessionYear);
+                cmd.Parameters.AddWithValue("original_StudentID", original_Student.StudentID);
+                //cmd.Parameters.AddWithValue("Original_Name", original_Student.Name);
+                //cmd.Parameters.AddWithValue("Original_Email", original_Student.Email);
+                //cmd.Parameters.AddWithValue("Original_Phone", original_Student.Phone);
+                //cmd.Parameters.AddWithValue("Original_Subject", original_Student.Subject);
+                //cmd.Parameters.AddWithValue("Original_SessionYear", original_Student.SessionYear);
                 con.Open();
                 updateCount = cmd.ExecuteNonQuery();
             }
