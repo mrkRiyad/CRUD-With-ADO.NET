@@ -33,6 +33,7 @@
     </div>
     <div class="row">
         <h4>Insert New Student</h4>
+        <asp:ValidationSummary ID="valsum" runat="server" ForeColor="Red" BorderColor="Red" BorderWidth="2" Width="30%" HeaderText="Validation Errors:"></asp:ValidationSummary>
         <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="30%" AutoGenerateRows="False" DataSourceID="ObjectDataSource1" DefaultMode="Insert" CssClass="table table-bordered table-condensed">
             <Fields>
             <asp:TemplateField HeaderText="Name">
