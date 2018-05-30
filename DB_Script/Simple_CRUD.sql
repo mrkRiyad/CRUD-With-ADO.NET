@@ -1,21 +1,25 @@
+USE master
+GO
+IF EXISTS(select * from sys.databases where name='Simple_CRUD')
+DROP DATABASE Simple_CRUD
+GO
 CREATE DATABASE Simple_CRUD
 GO
 USE Simple_CRUD
 GO
 CREATE TABLE Students (
     StudentID INT IDENTITY,
-    Name VARCHAR(25) NOT NULL,
-    Email VARCHAR(25) NULL,
-    Phone VARCHAR(11) NULL,
-    Subject VARCHAR(25) NULL,
-    SessionYear INT NULL,
+    Name VARCHAR(25) NOT NULL, --require --custom
+    Email VARCHAR(25) NULL, --compare --regex
+    ReEmail VARCHAR(25) NULL, --compare
+    Age INT NULL, --range
     PRIMARY KEY (StudentID)
 )
 GO
 /* Dummy Data */
 INSERT INTO Students VALUES
-('Ragnar Lethbrock', 'ragnar@gmail.com', '01374563214', 'JavaScript', 2018 ),
-('Ivor Floki', 'floki@gamil.com', '01285463214', 'Python', 2016),
-('Usain Rollo', 'rollo@gmail.com', '01436578421', 'Elixer', 2017)
+('RAGNAR', 'ragnar@gmail.com', 'ragnar@gmail.com', 25 ),
+('FLOKI', 'floki@gamil.com', 'floki@gamil.com', 30),
+('BJON', 'bjon@gmail.com', 'bjon@gmail.com', 28)
 GO
 SELECT * FROM Students
