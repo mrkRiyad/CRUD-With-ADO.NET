@@ -15,26 +15,26 @@ public static class StudentDB
     public static List<Students> GetAllStudents()
     {
         List<Students> stdList = new List<Students>();
-        string sql = "Select StudentID, Name, Email, Phone, Subject, SessionYear From Students Order by StudentID";
+        string sql = "Select StudentID, Name, Email, ReEmail, Age From Students Order by StudentID";
         using (SqlConnection con = new SqlConnection(GetConnectionString()))
         {
             using (SqlCommand cmd = new SqlCommand(sql, con))
             {
                 con.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                Students student;
-                while (dr.Read())
+                using (SqlDataReader dr = cmd.ExecuteReader())
                 {
-                    student = new Students();
-                    student.StudentID = Convert.ToInt32(dr["StudentID"]);
-                    student.Name = dr["Name"].ToString();
-                    student.Email = dr["Email"].ToString();
-                    student.Phone = dr["Phone"].ToString();
-                    student.Subject = dr["Subject"].ToString();
-                    student.SessionYear = Convert.ToInt32(dr["SessionYear"]);
-                    stdList.Add(student);
+                    Students student;
+                    while (dr.Read())
+                    {
+                        student = new Students();
+                        student.StudentID = Convert.ToInt32(dr["StudentID"]);
+                        student.Name = dr["Name"].ToString();
+                        student.Email = dr["Email"].ToString();
+                        student.ReEmail = dr["ReEmail"].ToString();
+                        student.Age = Convert.ToInt32(dr["Age"]);
+                        stdList.Add(student);
+                    }
                 }
-                dr.Close();
             }
         }
         return stdList;
@@ -43,16 +43,15 @@ public static class StudentDB
     [DataObjectMethod(DataObjectMethodType.Insert)]
     public static void InsertStudent(Students std)
     {
-        string sql = "Insert Into Students Values(@Name, @Email, @Phone, @Subject, @SessionYear)";
+        string sql = "Insert Into Students Values(@Name, @Email, @ReEmail, @Age)";
         using (SqlConnection con = new SqlConnection(GetConnectionString()))
         {
             using (SqlCommand cmd = new SqlCommand(sql, con))
             {
                 cmd.Parameters.AddWithValue("Name", std.Name);
                 cmd.Parameters.AddWithValue("Email", std.Email);
-                cmd.Parameters.AddWithValue("Phone", std.Phone);
-                cmd.Parameters.AddWithValue("Subject", std.Subject);
-                cmd.Parameters.AddWithValue("SessionYear", std.SessionYear);
+                cmd.Parameters.AddWithValue("ReEmail", std.ReEmail);
+                cmd.Parameters.AddWithValue("Age", std.Age);
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
@@ -62,7 +61,6 @@ public static class StudentDB
     [DataObjectMethod(DataObjectMethodType.Delete)]
     public static int DeleteStudent(Students std)
     {
-        //string sql = "Delete From Students Where StudentID = @StudentID And Name = @Name And Email = @Email And Phone = @Phone And Subject = @Subject And SessionYear = @SessionYear)";
         string sql = "Delete From Students Where StudentID = @StudentID";
         int deleteCount = 0;
         using (SqlConnection con = new SqlConnection(GetConnectionString()))
@@ -70,11 +68,6 @@ public static class StudentDB
             using (SqlCommand cmd = new SqlCommand(sql, con))
             {
                 cmd.Parameters.AddWithValue("StudentID", std.StudentID);
-                //cmd.Parameters.AddWithValue("Name", std.Name);
-                //cmd.Parameters.AddWithValue("Email", std.Email);
-                //cmd.Parameters.AddWithValue("Phone", std.Phone);
-                //cmd.Parameters.AddWithValue("Subject", std.Subject);
-                //cmd.Parameters.AddWithValue("SessionYear", std.SessionYear);
                 con.Open();
                 deleteCount = cmd.ExecuteNonQuery();
             }
@@ -85,8 +78,7 @@ public static class StudentDB
     [DataObjectMethod(DataObjectMethodType.Update)]
     public static int UpdateStudent(Students original_Student, Students student)
     {
-        //string sql = "Update Students Set Name = @Name, Email = @Email, Phone = @Phone, Subject = @Subject, SessionYear = @SessionYear Where StudentID = @Original_StudentID And Name = @Original_Name And Email = @Original_Email And Phone = @Original_Phone And Subject = @Original_Subject And SessionYear = @Original_SessionYear)";
-        string sql = "Update Students Set Name = @Name, Email = @Email, Phone = @Phone, Subject = @Subject, SessionYear = @SessionYear Where StudentID = @original_StudentID";
+        string sql = "Update Students Set Name = @Name, Email = @Email, ReEmail = @ReEmail, Age = @Age Where StudentID = @original_StudentID";
         int updateCount = 0;
         using (SqlConnection con = new SqlConnection(GetConnectionString()))
         {
@@ -94,15 +86,9 @@ public static class StudentDB
             {
                 cmd.Parameters.AddWithValue("Name", student.Name);
                 cmd.Parameters.AddWithValue("Email", student.Email);
-                cmd.Parameters.AddWithValue("Phone", student.Phone);
-                cmd.Parameters.AddWithValue("Subject", student.Subject);
-                cmd.Parameters.AddWithValue("SessionYear", student.SessionYear);
+                cmd.Parameters.AddWithValue("ReEmail", student.ReEmail);
+                cmd.Parameters.AddWithValue("Age", student.Age);
                 cmd.Parameters.AddWithValue("original_StudentID", original_Student.StudentID);
-                //cmd.Parameters.AddWithValue("Original_Name", original_Student.Name);
-                //cmd.Parameters.AddWithValue("Original_Email", original_Student.Email);
-                //cmd.Parameters.AddWithValue("Original_Phone", original_Student.Phone);
-                //cmd.Parameters.AddWithValue("Original_Subject", original_Student.Subject);
-                //cmd.Parameters.AddWithValue("Original_SessionYear", original_Student.SessionYear);
                 con.Open();
                 updateCount = cmd.ExecuteNonQuery();
             }
