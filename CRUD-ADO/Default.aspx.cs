@@ -13,5 +13,19 @@ namespace CRUD_ADO
         {
 
         }
+
+        protected void CustomValidator1_ServerValidate(object source, ServerValidateEventArgs args)
+        {
+            bool isCap = args.Value.All(char.IsUpper);
+            if (isCap)  
+            {
+                args.IsValid = true;
+            }
+            else
+            {
+                args.IsValid = false;
+            }
+        }
+
     }
 }
